@@ -128,38 +128,130 @@
      </table>
   </div>
   <!--side card to add items in the stock-->
-  <div class="col-lg-4 col-md-12">
-        <div class="card">
-          <div class="card-head">
-               <h1>Overview</h1>
-               <div class="card-body">
-                   <div class="d-grid gap-2">
-                        <button class="btn btn-outline-primary">
-                                    <i class="bi bi-plus-circle"></i> Add New Product
-                        </button>
-                        <button class="btn btn-outline-success">
-                                    <i class="bi bi-eye"></i> View All Orders
-                        </button>
-                        <button class="btn btn-outline-info">
-                                    <i class="bi bi-person-plus"></i> Add Salesperson
-                         </button>
-                   </div>
-               </div>
+ 
+    <div class="col-lg-4 col-md-12">
+      <div class="card">
+        <div class="card-head p-3">
+          <h1>Overview</h1>
+        </div>
+        <div class="card-body">
+          <div class="d-grid gap-2">
+            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#dashboardproductModal">
+              <i class="bi bi-plus-circle"></i> Add New Product
+            </button>
+            <button class="btn btn-outline-success">
+              <i class="bi bi-eye"></i> View All Orders
+            </button>
+            <button class="btn btn-outline-info">
+              <i class="bi bi-person-plus"></i> Add Salesperson
+            </button>
           </div>
         </div>
+      </div>
+    </div>
+
+
+<!--modal for add new product to the stock-->
+<section>
+       <div class="modal fade" id="dashboardproductModal" tabindex="-1" aria-hidden="true">
+       <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+      
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h5 class="modal-title">Add New Product</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="modal-body">
+        <table class="table table-bordered text-center" id="productTable">
+          <thead class="table-light">
+            <tr>
+              <th>ID</th>
+              <th>Product Name</th>
+              <th>Category</th>
+              <th>Quantity</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Rows will be added here dynamically -->
+          </tbody>
+        </table>
+        <button class="btn btn-sm btn-dark mt-2" id="addRowBtn">
+          <i class="bi bi-plus"></i> Add Row
+        </button>
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="modal-footer">
+        <button class="btn btn-success">Save</button>
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
   </div>
 </div>
+</section>
 </div>
+</div>
+
+
+ <!--products page-->
 <section>
-  
-    <!--products page-->
     <div id="products-section" style="display:none;">
             <div class="d-flex justify-content-between align-items-center mb-4">
                 <h2>Product Management</h2>
-                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal">
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productpageModal">
                     <i class="bi bi-plus-circle"></i> Add New Product
                 </button>
             </div>
+            <!--modal for add new product to the stock-->
+
+      <div class="modal fade" id="productpageModal" tabindex="-1" aria-hidden="true">
+               <div class="modal-dialog modal-lg">
+               <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+        <h5 class="modal-title">Add New Product</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+         </div>
+
+        <!-- Modal Body -->
+       <div class="modal-body">
+        <table class="table table-bordered text-center" id="productTable">
+          <thead class="table-light">
+            <tr>
+              <th>ID</th>
+              <th>Product Name</th>
+              <th>Category</th>
+              <th>Quantity</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Rows will be added here dynamically -->
+          </tbody>
+        </table>
+        <button class="btn btn-sm btn-dark mt-2" id="addnewBtn">
+          <i class="bi bi-plus"></i> Add Row
+        </button>
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="modal-footer">
+        <button class="btn btn-success">Save</button>
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
             <div class="card">
                 <div class="card-body">
                     <div class="table-responsive">
@@ -184,10 +276,13 @@
                     </div>
                 </div>
             </div>
-       
+    </div>
 </section>
-<section>
- <!--orders page-->
+
+<!--orders page-->
+
+  <section>
+ 
  <div id="orders-section" style="display:none;">
             <h2 class="mb-4">Order Management</h2>
             <div class="card">
@@ -265,7 +360,8 @@
     let salesperson=document.getElementById('salesperson');
 
     // product section function
-    productpage.addEventListener('click',()=>{
+    productpage.addEventListener('click',(event)=>{
+       event.preventDefault();
        productsection.style.display='block';
        homepage.style.display='none';
        orderssection.style.display='none';
@@ -273,7 +369,8 @@
     })
 
     //dashboard section function
-    dashboard.addEventListener('click',()=>{
+    dashboard.addEventListener('click',(event)=>{
+       event.preventDefault();
       homepage.style.display='block';
       productsection.style.display='none';
       orderssection.style.display='none';
@@ -282,14 +379,16 @@
     })
 
     //orders section function
-    orders.addEventListener('click',()=>{
+    orders.addEventListener('click',(event)=>{
+       event.preventDefault();
       homepage.style.display='none';
       orderssection.style.display='block';
        productsection.style.display='none';
        salespersonsection.style.display='none';
     })
    //salesperson section function
-     salesperson.addEventListener('click',()=>{
+     salesperson.addEventListener('click',(event)=>{
+       event.preventDefault();
       homepage.style.display='none';
       orderssection.style.display='none';
        productsection.style.display='none';
