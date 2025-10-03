@@ -1,0 +1,176 @@
+
+body {
+      background-color: #eff2f4;
+    }
+    aside {
+      height: 95vh;
+      width: 220px;
+      position: fixed;
+      top: 50px;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: #fff;
+      padding: 20px;
+      border-right: 1px solid #ddd;
+    }
+
+    .navbar-brand-custom {
+          gap: 12px;
+        }
+
+
+      .custom-toggler {
+        border: 2px solid #e5e7eb;
+        border-radius: 8px;
+        padding: 8px 12px;
+        transition: all 0.3s ease;
+      }  
+
+      .nav-link-custom {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          padding: 10px 20px !important;
+          border-radius: 10px;
+          font-weight: 500;
+          color: #475569 !important;
+          transition: all 0.3s ease;
+          position: relative;
+          overflow: hidden;
+        }
+
+
+        .cart-badge {
+            position: absolute;
+            top: 4px;
+            right: 8px;
+            background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+            color: white;
+            font-size: 0.65rem;
+            font-weight: 700;
+            padding: 2px 6px;
+            border-radius: 12px;
+            min-width: 18px;
+            height: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 8px rgba(239, 68, 68, 0.4);
+            animation: pulse 2s infinite;
+          }
+              
+    .navbar {
+        padding: 12px 0;
+        background: white !important;
+        border-bottom: 1px solid #e5e7eb;
+        transition: all 0.3s ease;
+      }
+
+    
+    
+     .navbar-logo {
+          width: 70px;
+          height: auto;
+          transition: transform 0.3s ease;
+        }
+
+      .navbar-logo:hover {
+        transform: scale(1.05);
+      }
+          
+    .navbar .navbar-nav .nav-link:hover {
+      color: #0554cb !important; 
+    }
+
+   
+    .fa-cart-shopping{
+        font-size:40px;
+    }
+    .side-nav h1 {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+    .side-nav ul {
+      list-style: none;
+      padding: 0;
+    }
+    .side-nav ul li {
+      margin-bottom: 15px;
+    }
+    .side-nav ul li a {
+      text-decoration: none;
+      color: #333;
+    }
+    .card {
+      border: 1px solid #e3dddd;
+      border-radius: 10px;
+      padding: 10px;
+      text-align: center;
+      margin: 30px;
+    }
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: contain;
+      background:white;
+      border-radius: 5px;
+    }
+    .cardsection{
+        position: fixed;
+        top: 100px;
+        left: 230px;
+        bottom: 0;
+        right: 0;
+        overflow-y: scroll;
+        
+    }
+
+    .cardsection2{
+        position: fixed;
+        top: 100px;
+        left: 230px;
+        bottom: 0;
+        right: 0;
+        overflow-y: scroll;
+        display: none;
+    }
+
+    .cardsection3{
+        position: fixed;
+        top: 100px;
+        left: 230px;
+        bottom: 0;
+        right: 0;
+        overflow-y: scroll;
+        display: none;
+    }
+
+     .cardsection4{
+        position: fixed;
+        top: 100px;
+        left: 230px;
+        bottom: 0;
+        right: 0;
+        overflow-y: scroll;
+        display: none;
+    }
+
+     .cardsection5{
+        position: fixed;
+        top: 100px;
+        left: 230px;
+        bottom: 0;
+        right: 0;
+        overflow-y: scroll;
+        display: none;
+    }
+     .cardsection6{
+        position: fixed;
+        top: 100px;
+        left: 230px;
+        bottom: 0;
+        right: 0;
+        overflow-y: scroll;
+        display: none;
+    }
