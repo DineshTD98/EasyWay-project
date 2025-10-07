@@ -1,187 +1,27 @@
-body {
-  background-color: #eff2f4;
-}
-aside {
-  height: 95vh;
-  width: 220px;
-  position: fixed;
-  top: 50px;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background: #fff;
-  padding: 20px;
-  border-right: 1px solid #ddd;
-}
-
-.navbar-brand-custom {
-  gap: 12px;
-}
-
-.custom-toggler {
-  border: 2px solid #e5e7eb;
-  border-radius: 8px;
-  padding: 8px 12px;
-  transition: all 0.3s ease;
-}
-
-.nav-link {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 10px 20px !important;
-  border-radius: 10px;
-  font-weight: 500;
-  color: #475569 !important;
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-.cart-badge {
-  position: absolute;
-  top: 4px;
-  right: 8px;
-  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
-  color: white;
-  font-size: 0.65rem;
-  font-weight: 700;
-  padding: 2px 6px;
-  border-radius: 12px;
-  min-width: 18px;
-  height: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 2px 8px rgba(239, 68, 68, 0.4);
-  animation: pulse 2s infinite;
-}
-
-.navbar {
-  padding: 12px 0;
-  background: white !important;
-  border-bottom: 1px solid #e5e7eb;
-  transition: all 0.3s ease;
-}
-
-.navbar-logo {
-  width: 70px;
-  height: auto;
-  transition: transform 0.3s ease;
-}
-
-.navbar-logo:hover {
-  transform: scale(1.05);
-}
-
-.navbar .navbar-nav .nav-link:hover {
-  color: #0554cb !important;
-}
-
-.fa-cart-shopping {
-  font-size: 40px;
-}
-
-.side-nav h1 {
-  font-size: 20px;
-  margin-bottom: 20px;
-}
-.side-nav ul {
-  list-style: none;
-  padding: 0;
-}
-.side-nav ul li {
-  margin-bottom: 15px;
-}
-.side-nav ul li a {
-  text-decoration: none;
-  color: #333;
-}
-.card {
-  border: 1px solid #e3dddd;
-  border-radius: 10px;
-  padding: 10px;
-  text-align: center;
-  margin: 30px;
-}
-.card img {
-  width: 100%;
-  height: 150px;
-  object-fit: contain;
-  background: white;
-  border-radius: 5px;
-}
-.cardsection {
-  position: fixed;
-  top: 100px;
-  left: 230px;
-  bottom: 0;
-  right: 0;
-  overflow-y: scroll;
-}
-
-.cardsection2 {
-  position: fixed;
-  top: 100px;
-  left: 230px;
-  bottom: 0;
-  right: 0;
-  overflow-y: scroll;
-  display: none;
-}
-
-.cardsection3 {
-  position: fixed;
-  top: 100px;
-  left: 230px;
-  bottom: 0;
-  right: 0;
-  overflow-y: scroll;
-  display: none;
-}
-
-.cardsection4 {
-  position: fixed;
-  top: 100px;
-  left: 230px;
-  bottom: 0;
-  right: 0;
-  overflow-y: scroll;
-  display: none;
-}
-
-.cardsection5 {
-  position: fixed;
-  top: 100px;
-  left: 230px;
-  bottom: 0;
-  right: 0;
-  overflow-y: scroll;
-  display: none;
-}
-.cardsection6 {
-  position: fixed;
-  top: 100px;
-  left: 230px;
-  bottom: 0;
-  right: 0;
-  overflow-y: scroll;
-  display: none;
-}
-
-
- .containercart {
-            
-            margin: 0 auto;
-            display: none;
-            position: absolute;
-            z-index: 500;
-            top: 100px;
-            left: 10%;
-            right: 10%;
-            width: 1000px;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background:white;
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
 
         h1 {
             color: rgb(13, 12, 12);
@@ -341,3 +181,56 @@ aside {
                 padding-right: 15px;
             }
         }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🛒 Shopping Cart</h1>
+        
+        <div class="cart-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody id="cartBody">
+                    <tr>
+                        <td>
+                            <div class="product-cell">
+                                <img src="" alt="" class="product-image">
+                                <span class="product-name"></span>
+                            </div>
+                        </td>
+                        <td><span class="price"></span></td>
+                        <td>
+                            <div class="quantity">
+                              quantity
+                            </div>
+                        </td>
+                        <td><span class="total-price">total here</span></td>
+                    </tr>
+                  </tbody>
+            </table>
+        </div>
+
+        <div class="cart-summary">
+            <div class="summary-content">
+                <div class="summary-row">
+                    <span>Subtotal:</span>
+                    <span id="subtotal"></span>
+                </div>
+                <div class="summary-row">
+                    <span>:</span>
+                    <span id="tax"></span>
+                </div>
+                <div class="summary-row summary-total">
+                    <span>Total:</span>
+                    <span id="grandTotal"></span>
+                </div>
+            </div>
+        </div>
+    </div>

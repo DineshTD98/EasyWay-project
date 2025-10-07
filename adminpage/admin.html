@@ -142,14 +142,57 @@
             <button class="btn btn-outline-success">
               <i class="bi bi-eye"></i> View All Orders
             </button>
-            <button class="btn btn-outline-info">
+            <button class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#salespersonpageModal">
               <i class="bi bi-person-plus"></i> Add Salesperson
             </button>
           </div>
         </div>
       </div>
     </div>
+<section>
+     <!--add new salesperson section-->
 
+      <div class="modal fade" id="salespersonpageModal" tabindex="-1" aria-hidden="true">
+               <div class="modal-dialog modal-lg">
+               <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+        <h5 class="modal-title">Add New salesperson</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+         </div>
+
+        <!-- Modal Body -->
+       <div class="modal-body">
+        <table class="table table-bordered text-center" id="salespersonpageTable">
+          <thead class="table-light">
+            <tr>
+              <th>ID</th>
+              <th>salesperson Name</th>
+              <th>phone no</th>
+              <th>vehicle type</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Rows will be added here dynamically -->
+          </tbody>
+        </table>
+        <button class="btn btn-sm btn-dark mt-2" id="addnewBtn">
+          <i class="bi bi-plus"></i> Add Row
+        </button>
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="modal-footer">
+        <button class="btn btn-success">Save</button>
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+</section>
 
 <!--modal for add new product to the stock-->
 <section>
@@ -321,6 +364,51 @@
                     <i class="bi bi-person-plus"></i> Add New Salesperson
                 </button>
             </div>
+           
+             <!--add new salesperson section-->
+
+      <div class="modal fade" id="salespersonModal" tabindex="-1" aria-hidden="true">
+               <div class="modal-dialog modal-lg">
+               <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+        <h5 class="modal-title">Add New salesperson</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+         </div>
+
+        <!-- Modal Body -->
+       <div class="modal-body">
+        <table class="table table-bordered text-center" id="salespersonTable">
+          <thead class="table-light">
+            <tr>
+              <th>ID</th>
+              <th>salesperson Name</th>
+              <th>phone no</th>
+              <th>vehicle type</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Rows will be added here dynamically -->
+          </tbody>
+        </table>
+        <button class="btn btn-sm btn-dark mt-2" id="addnewBtn">
+          <i class="bi bi-plus"></i> Add Row
+        </button>
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="modal-footer">
+        <button class="btn btn-success">Save</button>
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
             <div class="card">
                 <div class="card-body">
                     <div class="table-responsive">

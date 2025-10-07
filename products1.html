@@ -1,60 +1,32 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Products</title>
   <link rel="icon" href="assets/images/navbar2image.png">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
-        rel="stylesheet" 
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
-        crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/b421bddb66.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/style2.css">
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
-<body>
 
+<body>
+ 
   <!-- ✅ Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
-    <div class="container-fluid">
+  <nav class="navbar navbar-expand-lg navbar-light shadow-sm fixed-top">
+    <div class="container-fluid navbar-brand-custom">
+
       <!-- Left Section -->
       <div class="d-flex align-items-center">
         <div class="me-3">
           <span>Location <i class="fa-solid fa-location-dot"></i></span><br>
           <span>600002</span>
         </div>
-        <img src="assets/images/navbar2image.png" alt="navbarimage" width="80">
-        <span class="fs-4 fw-bold ms-2">Easy way to shop</span>
-      </div>
-
-      <!-- Toggler -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarnav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Menu -->
-      <div class="collapse navbar-collapse" id="navbarnav">
-        <ul class="navbar-nav ms-auto">
-           <li class="nav-item"><a href="#" class="nav-link"><i class="fa-solid fa-cart-shopping"></i></a></li>
-          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-         
-        </ul>
-      </div>
-    </div>
-  </nav>
-</head>
-<body>
-
-  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
-    <div class="container-fluid">
-      <!-- Left Section - Brand -->
-      <div class="d-flex align-items-center navbar-brand-custom">
         <img src="assets/images/navbar2image.png" alt="navbarimage" class="navbar-logo">
-        <span class="brand-text fs-3">Easy way to shop</span>
+        <span class="fs-4 fw-bold ms-2">Easy way to shop</span>
       </div>
 
       <!-- Toggler -->
@@ -64,1443 +36,1642 @@
 
       <!-- Menu -->
       <div class="collapse navbar-collapse" id="navbarnav">
-        <ul class="navbar-nav ms-auto align-items-center">
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a href="index.html" class="nav-link nav-link-custom">
-              <i class="fa-solid fa-house"></i>
-              <span>Home</span>
-            </a>
+            <a href="index.html" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link nav-link-custom">
-              <i class="fa-solid fa-heart"></i>
-              <span>Wishlist</span>
-            </a>
+            <a href="#" class="nav-link">Wishlist</a>
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link nav-link-custom cart-link">
+          <li class="nav-item position-relative">
+            <a href="#" class="nav-link" id="cart">
               <i class="fa-solid fa-cart-shopping"></i>
-              <span>Cart</span>
-              <span class="cart-badge">3</span>
+              <span class="cart-badge">0</span>
             </a>
           </li>
         </ul>
       </div>
     </div>
-</nav>
+  </nav>
+
   <!-- ✅ Sidebar -->
-  <aside class="mt-5 pt-4">
-  <div class="side-nav">
-    <h1>Product Categories</h1>
-    <ul class="list-unstyled">
+  <aside class="mt-5 pt-4 sidenav">
+    <div class="side-nav">
+      <h1>Product Categories</h1>
+      <ul class="list-unstyled">
 
-      <!-- Dairy -->
-      <li class="dropdown">
-        <a class="dropdown-toggle" href="#" id="dairy" data-bs-toggle="dropdown" aria-expanded="false">
-          Dairy Products
-        </a>
-        <ul class="dropdown-menu" aria-labelledby="dairy">
-          <li><a class="dropdown-item" href="#milk">Milk</a></li>
-          <li><a class="dropdown-item" href="#cheese">Cheese</a></li>
-          <li><a class="dropdown-item" href="#butter">Butter</a></li>
-          <li><a class="dropdown-item" href="#curd">Curd</a></li>
-        </ul>
-      </li>
+        <!-- Dairy -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#" id="dairy" data-bs-toggle="dropdown" aria-expanded="false">
+            Dairy Products
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="dairy">
+            <li><a class="dropdown-item" href="#milk">Milk</a></li>
+            <li><a class="dropdown-item" href="#cheese">Cheese</a></li>
+            <li><a class="dropdown-item" href="#butter">Butter</a></li>
+            <li><a class="dropdown-item" href="#curd">Curd</a></li>
+          </ul>
+        </li>
 
-      <!-- Rice -->
-      <li class="dropdown mt-2">
-        <a class="dropdown-toggle" href="#" id="rice" data-bs-toggle="dropdown" aria-expanded="false">
-          Rice Products
-        </a>
-        <ul class="dropdown-menu" aria-labelledby="rice">
-          <li><a class="dropdown-item" href="#basmati">Dawaat</a></li>
-          <li><a class="dropdown-item" href="#brownrice">India Gate</a></li>
-          <li><a class="dropdown-item" href="#boiled">Fortune</a></li>
-          <li><a class="dropdown-item" href="#idly">Idly Rice</a></li>
-        </ul>
-      </li>
+        <!-- Rice -->
+        <li class="dropdown mt-2">
+          <a class="dropdown-toggle" href="#" id="rice" data-bs-toggle="dropdown" aria-expanded="false">
+            Rice Products
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="rice">
+            <li><a class="dropdown-item" href="#dawaat">Dawaat</a></li>
+            <li><a class="dropdown-item" href="#indiagate">India Gate</a></li>
+            <li><a class="dropdown-item" href="#fortune">Fortune</a></li>
+            <li><a class="dropdown-item" href="#idlyrice">Idly Rice</a></li>
+          </ul>
+        </li>
 
-      <!-- Masala -->
-      <li class="dropdown mt-2">
-        <a class="dropdown-toggle" href="#" id="masala" data-bs-toggle="dropdown" aria-expanded="false">
-          Masala & Spices
-        </a>
-        <ul class="dropdown-menu" aria-labelledby="masala">
-          <li><a class="dropdown-item" href="#turmeric">Turmeric</a></li>
-          <li><a class="dropdown-item" href="#chilli">Chilli Powder</a></li>
-          <li><a class="dropdown-item" href="#cumin">Cumin</a></li>
-          <li><a class="dropdown-item" href="#garam">Garam Masala</a></li>
-        </ul>
-      </li>
+        <!-- Masala -->
+        <li class="dropdown mt-2">
+          <a class="dropdown-toggle" href="#" id="masala" data-bs-toggle="dropdown" aria-expanded="false">
+            Masala & Spices
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="masala">
+            <li><a class="dropdown-item" href="#turmeric">Turmeric</a></li>
+            <li><a class="dropdown-item" href="#chilli">Chilli Powder</a></li>
+            <li><a class="dropdown-item" href="#cumin">Cumin</a></li>
+            <li><a class="dropdown-item" href="#garam">Garam Masala</a></li>
+          </ul>
+        </li>
 
-      <!-- Cleaning -->
-      <li class="dropdown mt-2">
-        <a class="dropdown-toggle" href="#" id="cleaning" data-bs-toggle="dropdown" aria-expanded="false">
-          Cleaning Products
-        </a>
-        <ul class="dropdown-menu" aria-labelledby="cleaning">
-          <li><a class="dropdown-item" href="#detergent">Washing liquids</a></li>
-          <li><a class="dropdown-item" href="#soap">Kitchen cleaners</a></li>
-          <li><a class="dropdown-item" href="#phenyl">Bathroom Cleaners</a></li>
-          <li><a class="dropdown-item" href="#toilet">Toilet Cleaner</a></li>
-        </ul>
-      </li>
+        <!-- Cleaning -->
+        <li class="dropdown mt-2">
+          <a class="dropdown-toggle" href="#" id="cleaning" data-bs-toggle="dropdown" aria-expanded="false">
+            Cleaning Products
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="cleaning">
+            <li><a class="dropdown-item" href="#detergent">Washing liquids</a></li>
+            <li><a class="dropdown-item" href="#kitchen">Kitchen cleaners</a></li>
+            <li><a class="dropdown-item" href="#bathroom">Bathroom Cleaners</a></li>
+            <li><a class="dropdown-item" href="#toilet">Toilet Cleaner</a></li>
+          </ul>
+        </li>
 
-      <!-- Healthcare -->
-      <li class="dropdown mt-2">
-        <a class="dropdown-toggle" href="#" id="healthcare" data-bs-toggle="dropdown" aria-expanded="false">
-          Healthcare
-        </a>
-        <ul class="dropdown-menu" aria-labelledby="healthcare">
-          <li><a class="dropdown-item" href="#Soap">Soap</a></li>
-          <li><a class="dropdown-item" href="#Shampoo">Shampoo</a></li>
-          <li><a class="dropdown-item" href="#handsanitizer">Hand Sanitizer</a></li>
-          <li><a class="dropdown-item" href="#Perfumes">Perfumes</a></li>
-        </ul>
-      </li>
+        <!-- Healthcare -->
+        <li class="dropdown mt-2">
+          <a class="dropdown-toggle" href="#" id="healthcare" data-bs-toggle="dropdown" aria-expanded="false">
+            Healthcare
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="healthcare">
+            <li><a class="dropdown-item" href="#Soap">Soap</a></li>
+            <li><a class="dropdown-item" href="#Shampoo">Shampoo</a></li>
+            <li><a class="dropdown-item" href="#handsanitizer">Hand Sanitizer</a></li>
+            <li><a class="dropdown-item" href="#Perfumes">Perfumes</a></li>
+          </ul>
+        </li>
 
-      <!-- Instant -->
-      <li class="dropdown mt-2">
-        <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" id="instant" aria-expanded="false" >
-          Instant products
-        </a>
-        <ul class="dropdown-menu" aria-labelledby="instant">
-          <li><a href="#noodles" class="dropdown-item">Noodles</a></li>
-          <li><a href="#oats" class="dropdown-item">Oats</a></li>
-          <li><a href="#soups" class="dropdown-item">Soup</a></li>
-          <li><a href="#pasta" class="dropdown-item">Pasta</a></li>
-        </ul>
+        <!-- Instant -->
+        <li class="dropdown mt-2">
+          <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" id="instant" aria-expanded="false">
+            Instant products
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="instant">
+            <li><a href="#noodles" class="dropdown-item">Noodles</a></li>
+            <li><a href="#oats" class="dropdown-item">Oats</a></li>
+            <li><a href="#soups" class="dropdown-item">Soup</a></li>
+            <li><a href="#pasta" class="dropdown-item">Pasta</a></li>
+          </ul>
 
-      </li>
-    </ul>
-  </div>
-</aside>
-
-  <!-- ✅ Modal for Category 
-  <div class="modal fade" id="categoryModal" tabindex="-1">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="categoryTitle">Rice Products</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-        <div class="modal-body">
-          
-        <div class="d-flex flex-row flex-wrap">
-            <div class="card" style="width: 200px;">
-              <img src="" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Product 1</h5>
-                <p class="card-text">Price: $0.00</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-
-            
-            <div class="card" style="width: 200px;">
-              <img src="" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Product 2</h5>
-                <p class="card-text">Price: $0.00</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-
-            <div class="card" style="width: 200px;">
-              <img src="" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Product 3</h5>
-                <p class="card-text">Price: $0.00</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-
-            <div class="card" style="width: 200px;">
-              <img src="" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Product 4</h5>
-                <p class="card-text">Price: $0.00</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-
-            
-            <div class="card" style="width: 200px;">
-              <img src="" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Product 5</h5>
-                <p class="card-text">Price: $0.00</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-
-            
-            <div class="card" style="width: 200px;">
-              <img src="" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Product 6</h5>
-                <p class="card-text">Price: $0.00</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-
-            
-            <div class="card" style="width: 200px;">
-              <img src="" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Product 1</h5>
-                <p class="card-text">Price: $0.00</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-              </div>  
-          </div>
-        </div>
-      </div>
+        </li>
+      </ul>
     </div>
-  </div> -->
+  </aside>
+
   <section>
     <!--rice products card section-->
-      <div class="cardsection" id="card-section">
+    <!--dawaat-->
+    <div class="cardsection" id="card-section">
+      <div>
         <h1 class="text-center">Rice products</h1>
-        <h2>DAWAAT</h2>
-        <div class="row g-3">
-          <div class="col-md-3 col-sm-6">
-            <div class="card">
-              <img src="assets/riceimages/img1.jpeg" alt="Product Image">
-                <div class="card-body">
-                <h5 class="card-title"> Rozana Basmati Rice 10kg </h5>
-                <p class="card-text">Price:Rs.580</p>
-                <button class="btn btn-primary">Add to Cart</button>
-               </div>
-            </div>
-          </div>
-
-            <div class="col-md-3 col-sm-6">
-            <div class="card">
-              <img src="assets/riceimages/img2.jpeg" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title"></h5>
-                <p class="card-text">Price: Rs.700</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6">
-            <div class="card ">
-              <img src="assets/riceimages/img3.jpeg" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Product 2</h5>
-                <p class="card-text">Price: RS.</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6">
-            <div class="card">
-              <img src="assets/riceimages/img4.jpeg" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Sona Masoori Rice 5kg</h5>
-                <p class="card-text">Price: Rs.470</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-        </div>
-        </div>
-         <h2>INDIA GATE</h2>
-        <div class="row g-3">
-          <div class="col-md-3 col-sm-6">
-            <div class="card">
-              <img src="assets/riceimages/img5.jpeg" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">India Gate EveryDay 10kg</h5>
-                <p class="card-text">Price:Rs.800</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-          </div>
-
-            <div class="col-md-3 col-sm-6">
-            <div class="card">
-              <img src="assets/riceimages/img6.jpeg" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">India Gate Feast Rozzana 10kg</h5>
-                <p class="card-text">Price: RS.750</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6">
-             <div class="card">
-              <img src="assets/riceimages/img7.jpeg" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">India Gate Dubar 10kg</h5>
-                <p class="card-text">Price: Rs.600</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-            </div>
-
-             <div class="card" style="width: 200px;">
-              <img src="assets/riceimages/img8.jpeg" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">India Gate Classic 5kg</h5>
-                <p class="card-text">Price:RS.300</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-          </div>
-        
-     
-
-            <h2>FORTUNE</h2>
-            <div class="row g-3">
-             <div class="col-md-3 col-sm-6">
-                <div class="card">
-              <img src="assets/riceimages/img9.jpeg" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Sona Masoori 5kg</h5>
-                <p class="card-text">Price: Rs.500</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-             </div>
-
-             <div class="col-md-3 col-sm-6">
-             <div class="card">
-              <img src="assets/riceimages/img10.jpeg" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Razana Gold 10kg</h5>
-                <p class="card-text">Price:Rs.700</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-             </div>
-
-            <div class="col-md-3 col-sm-6">
-            <div class="card">
-              <img src="assets/riceimages/img11.jpeg" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Hamesha mini dubar basmati rice 5kg</h5>
-                <p class="card-text">Price: Rs.430</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-            </div>
-
-           <div class="col-md-3 col-sm-6">
-           <div class="card">
-              <img src="assets/riceimages/img12.jpeg" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Everyday Basmati rice grain 10kg</h5>
-                <p class="card-text">Price: Rs.780</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-
-          </div>
-        </div>
-          
-
-            <h2 id="">Boiled Rice</h2>
-            <div class="row g-3">
-                <div class="col-md-3 col-sm-6">
-                   <div class="card">
-           
-                   <img src="" alt="Product Image">
-                   <div class="card-body">
-                    <h5 class="card-title">Product 2</h5>
-                    <p class="card-text">Price: Rs.</p>
-                    <button class="btn btn-primary">Add to Cart</button>
-                   </div>
-                  </div>
-                </div>
-
-            <div class="col-md-3 col-sm-6">
-            <div class="card">
-              <img src="" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Product 2</h5>
-                <p class="card-text">Price:  Rs.</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-            </div>
-
-           <div class="col-md-3 col-sm-6">
-           <div class="card">
-              <img src="" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Product 2</h5>
-                <p class="card-text">Price:Rs.</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-           </div>
-            
-
-           <div class="col-md-3 col-sm-6">
-           <div class="card">
-              <img src="" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Product 2</h5>
-                <p class="card-text">Price: Rs.</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-           </div>
-
-            </div>
+        <h2 id="dawaat">DAWAAT</h2>
       </div>
+      <div class="row g-3">
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/riceimages/img1.jpeg" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title"> Rozana Basmati Rice 10kg super </h5>
+              <p class="card-text">Price:Rs.580</p>
+              <button class="btn btn-primary add-to-cart-btn" data-bs-toggle="modal" data-bs-target="#cartModal"
+                data-product="Rozana Basmati Rice 10kg" data-price="580" data-image="assets/riceimages/img1.jpeg">
+                Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/riceimages/img2.jpeg" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title"> Rozana Basmati Rice 10kg mini mogra </h5>
+              <p class="card-text">Price: Rs.700</p>
+              <button class="btn btn-primary add-to-cart-btn" data-bs-toggle="modal" data-bs-target="#cartModal"
+                data-product="Rozana Basmati Rice 10kg mini mogra" data-price="700"
+                data-image="assets/riceimages/img2.jpeg">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card ">
+            <img src="assets/riceimages/Daawat-Super-Basmati-Rice-Long-Grain.webp" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Daawat Super Basmati Rice | Long Grain 5kg</h5>
+              <p class="card-text">Price: RS.750</p>
+              <button class="btn btn-primary add-to-cart-btn" data-bs-toggle="modal" data-bs-target="#cartModal"
+                data-product="Daawat Super Basmati Rice | Long Grain 5kg" data-price="750"
+                data-image="assets/riceimages/Daawat-Super-Basmati-Rice-Long-Grain.webp">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/riceimages/img4.jpeg" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Sona Masoori Rice 5kg</h5>
+              <p class="card-text">Price: Rs.470</p>
+              <button class="btn btn-primary add-to-cart-btn" data-bs-toggle="modal" data-bs-target="#cartModal"
+                data-product="Sona Masoori Rice 5kg" data-price="470" data-image="assets/riceimages/img4.jpeg">Add to
+                Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--rice products card section-->
+      <!--india gate-->
+      <div>
+        <h2 id="indiagate">INDIA GATE</h2>
+      </div>
+      <div class="row g-3">
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/riceimages/img5.jpeg" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">India Gate EveryDay 10kg</h5>
+              <p class="card-text">Price:Rs.800</p>
+              <button class="btn btn-primary add-to-cart-btn" data-bs-toggle="modal" data-bs-target="#cartModal"
+                data-product="India Gate EveryDay 10kg" data-price="800" data-image="assets/riceimages/img5.jpeg">Add
+                to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/riceimages/img6.jpeg" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">India Gate Feast Rozzana 10kg</h5>
+              <p class="card-text">Price: RS.750</p>
+              <button class="btn btn-primary add-to-cart-btn" data-bs-toggle="modal" data-bs-target="#cartModal"
+                data-product="India Gate Feast Rozzana 10kg" data-price="750"
+                data-image="assets/riceimages/img6.jpeg">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/riceimages/img7.jpeg" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">India Gate Dubar 10kg</h5>
+              <p class="card-text">Price: Rs.600</p>
+              <button class="btn btn-primary add-to-cart-btn" data-bs-toggle="modal" data-bs-target="#cartModal"
+                data-product="India Gate Dubar 10kg" data-price="600" data-image="assets/riceimages/img7.jpeg">Add to
+                Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="width: 200px;">
+          <img src="assets/riceimages/img8.jpeg" alt="Product Image">
+          <div class="card-body">
+            <h5 class="card-title">India Gate Classic 5kg</h5>
+            <p class="card-text">Price:RS.300</p>
+            <button class="btn btn-primary add-to-cart-btn" data-bs-toggle="modal" data-bs-target="#cartModal"
+              data-product="India Gate Classic 5kg" data-price="300" data-image="assets/riceimages/img8.jpeg">Add to
+              Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!--fortune-->
+
+      <div>
+        <h2 id="fortune"> FORTUNE</h2>
+      </div>
+      <div class="row g-3">
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/riceimages/img9.jpeg" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Sona Masoori 5kg</h5>
+              <p class="card-text">Price: Rs.500</p>
+              <button class="btn btn-primary add-to-cart-btn" data-bs-toggle="modal" data-bs-target="#cartModal"
+                data-product="Sona Masoori 5kg" data-price="500" data-image="assets/riceimages/img9.jpeg">Add to
+                Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/riceimages/img10.jpeg" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Razana Gold 10kg</h5>
+              <p class="card-text">Price:Rs.700</p>
+              <button class="btn btn-primary add-to-cart-btn" data-bs-toggle="modal" data-bs-target="#cartModal"
+                data-product="Razana Gold 10kg" data-price="700" data-image="assets/riceimages/img10.jpeg">Add to
+                Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/riceimages/img11.jpeg" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Hamesha mini dubar basmati rice 5kg</h5>
+              <p class="card-text">Price: Rs.430</p>
+              <button class="btn btn-primary add-to-cart-btn" data-bs-toggle="modal" data-bs-target="#cartModal"
+                data-product="Hamesha mini dubar basmati rice 5kg" data-price="430"
+                data-image="assets/riceimages/img11.jpeg">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/riceimages/img12.jpeg" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Everyday Basmati rice grain 10kg</h5>
+              <p class="card-text">Price: Rs.780</p>
+              <button class="btn btn-primary add-to-cart-btn" data-bs-toggle="modal" data-bs-target="#cartModal"
+                data-product="Everyday Basmati rice grain 10kg" data-price="780"
+                data-image="assets/riceimages/img12.jpeg">Add to Cart</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!--idly rice-->
+
+      <div>
+        <h2 id="idlyrice">Idly Rice</h2>
+      </div>
+      <div class="row g-3">
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+
+            <img src="assets/riceimages/Daily-Good-Brown-Rice.webp" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Daily Good Brown Rice 1kg</h5>
+              <p class="card-text">Price: Rs.89</p>
+              <button class="btn btn-primary add-to-cart-btn" data-bs-toggle="modal" data-bs-target="#cartModal"
+                data-product="Daily Good Brown Rice 1kg" data-price="89"
+                data-image="assets/riceimages/Daily-Good-Brown-Rice.webp">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/riceimages/Daily-Good-Idli-Rice.webp" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Daily Good idly Rice 1kg</h5>
+              <p class="card-text">Price: Rs.110</p>
+              <button class="btn btn-primary add-to-cart-btn" data-bs-toggle="modal" data-bs-target="#cartModal"
+                data-product="Daily Good idly Rice 1kg" data-price="110"
+                data-image="assets/riceimages/Daily-Good-Idli-Rice.webp">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/riceimages/Daily-Good-Sona-Masoori-Raw-Rice.webp" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Daily Good Sona Masoori Raw Rice 5kg</h5>
+              <p class="card-text">Price:Rs.350</p>
+              <button class="btn btn-primary add-to-cart-btn" data-bs-toggle="modal" data-bs-target="#cartModal"
+                data-product="Daily Good Sona Masoori Raw Rice 5kg" data-price="350"
+                data-image="assets/riceimages/Daily-Good-Sona-Masoori-Raw-Rice.webp">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/riceimages/24-Mantra-Organic-Sonamasuri-Raw-Rice-Polished.webp" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title"> Organic Sonamasuri Raw Rice Polished 1kg</h5>
+              <p class="card-text">Price: Rs.110</p>
+              <button class="btn btn-primary add-to-cart-btn" data-bs-toggle="modal" data-bs-target="#cartModal"
+                data-product="Organic Sonamasuri Raw Rice Polished 1kg" data-price="110"
+                data-image="assets/riceimages/24-Mantra-Organic-Sonamasuri-Raw-Rice-Polished.webp">Add to
+                Cart</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
   </section>
 
 
   <!--card section for dairy products-->
-      
-      <section>
-      
-      <div class="cardsection2" id="dairy">
+
+  <section>
+
+    <div class="cardsection2" id="dairy">
+
+      <div>
         <h1 class="text-center">Dairy products</h1>
         <h2 id="milk">Milk</h2>
-        <div class="row g-3">
-            <div class="col-md-3 col-sm-6">
-           <div class="card">
-              <img src="assets/milksection/milkimg4.jpg" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">
-               Nestle LACTOGROW Nutritious Milk Drink Powder |
-                Biscuity Vanilla Flavour (2 - 6 Years), 
-                400g.</h5>
-                <p class="card-text">Price:Rs.</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6">
-            <div class="card">
-              <img src="assets/milksection/milkimg1.jpg" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Urban Platter Soya Milk Powder, 1kg  (Soy-Based Dairy Alternative | Unsweetened | 49% Protein | Plant-Based | Non GMO)</h5>
-                <p class="card-text">Price: Rs.</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-            </div>
-
-             <div class="col-md-3 col-sm-6">
-              <div class="card">
-              <img src="assets/milksection/milkimg2.jpg" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">GAVYRATAN A2 Cow Skimmed Milk Powder 1kg | All Natural | 100% Pure | Boosts Liver Health (1kg)</h5>
-                <p class="card-text">Price: Rs.</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-             </div>
-
-            <div class="col-md-3 col-sm-6">
-              <div class="card">
-              <img src="assets/milksection/milkimg3.jpg" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Product 2</h5>
-                <p class="card-text">Price:Rs.</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-        </div>
-        </div>
-
-
-         <h2 id="cheese">Cheese</h2>
-        <div class="row g-3">
-             <div class="col-md-3 col-sm-6">
-              <div class="card">
-              <img src="assets/cheesesection/cheesesection.jpg" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Amul Diced Cheese Blend, 200 g</h5>
-                <p class="card-text">Price: Rs.</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-             </div>
-
-             <div class="col-md-3 col-sm-6">
-               <div class="card">
-              <img src="assets/cheesesection/cheeseimg2.jpg" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">NatureOnus Vegan Cheddar Cheese Block 250gms | Plant Based Cheddar Cheese (Dairy Free and Lactose Free | MELTABLE, SHREDDABLE, SLICABLE Cheese)</h5>
-                <p class="card-text">Price: Rs.</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-             </div>
-
-             <div class="col-md-3 col-sm-6">
-              <div class="card">
-              <img src="assets/cheesesection/cheeseimg3.jpg" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">D'lecta 100% Mozzarella Cheese Block 200g – For Authentic, Stretchy Pizza</h5>
-                <p class="card-text">Price: Rs.</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-             </div>
-
-             <div class="col-md-3 col-sm-6">
-              <div class="card">
-              <img src="assets/cheesesection/cheeseimg4.jpg" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">D’lecta Cream Cheese 400g – For Delicious Cheesecake</h5>
-                <p class="card-text">Price:Rs</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-            </div>
-        </div>
-
-
-
-            <h2 id="curd">curd</h2>
-            
-            <div class="row g-3"> 
-             <div class="col-md-3 col-sm-6">
-              <div class="card">
-              <img src="assets/curdimges/curdimg1.webp" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Milky Mist Set Curd, 1 Kg, Liquid</h5>
-                <p class="card-text">Price: Rs</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-             </div>
-
-              <div class="col-md-3 col-sm-6">
-              <div class="card">
-              <img src="assets/curdimges/curdimg2.webp" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Heritage Total Curd, 400 g</h5>
-                <p class="card-text">Price:Rs</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-              </div>
-
-            <div class="col-md-3 col-sm-6">
-              <div class="card">
-              <img src="assets/curdimges/curdimg3.webp" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Epigamia Natural Greek Yogurt, 85g |</h5>
-                <p class="card-text">Price:Rs</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6">
-              <div class="card">
-              <img src="assets/curdimges/curdimg4.webp" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Akshayakalpa Organic Akshayakalpa - Organic Curd, 200g, Pouch</h5>
-                <p class="card-text">Price:Rs</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-            </div>
-
-        </div>
-      
-
-         <h2 id="butter">Butter</h2>
-            <div class="row g-3"> 
-            <div class="col-md-3 col-sm-6">
-              <div class="card">
-              <img src="assets/butterimgages/butterimg1.webp" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Amul Salted Butter Pasteurised, 100 Grams</h5>
-                <p class="card-text">Price: Rs</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-            </div>
-
-             <div class="col-md-3 col-sm-6">
-               <div class="card">
-              <img src="assets/butterimgages/img2.webp" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Heritage Table Butter Pouch,500 Gram,Salted</h5>
-                <p class="card-text">Price: Rs</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-             </div>
-
-            <div class="col-md-3 col-sm-6">
-              <div class="card">
-              <img src="assets/butterimgages/img3.webp" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Pintola All Natural Peanut Butter Crunchy 350g</h5>
-                <p class="card-text">Price: Rs</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6">
-            <div class="card">
-              <img src="assets/butterimgages/img4.jpg" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">ALPINO Natural Peanut Butter Crunch 1kg - 100% Roasted Peanuts </h5>
-                <p class="card-text">Price: Rs</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-            </div>
-
-           </div>
       </div>
-      
+      <div class="row g-3">
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/milksection/milkimg4.jpg" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">
+                Nestle LACTOGROW Nutritious Milk Drink Powder 400g.</h5>
+              <p class="card-text">Price:Rs.60</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/milksection/milkimg1.jpg" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Urban Platter Soya Milk Powder, 1kg  </h5>
+              <p class="card-text">Price: Rs.110</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/milksection/milkimg2.jpg" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">GAVYRATAN A2 Cow Skimmed Milk Powder 1kg </h5>
+              <p class="card-text">Price: Rs.90</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/milksection/milkimg1.jpg" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Urban Platter Soya Milk Powder, 5kg</h5>
+              <p class="card-text">Price:Rs.415</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--cheese section-->
+      <div>
+        <h2 id="cheese">Cheese</h2>
+      </div>
+      <div class="row g-3">
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/cheesesection/cheesesection.jpg" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Amul Diced Cheese Blend, 200 g</h5>
+              <p class="card-text">Price: Rs.60</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/cheesesection/cheeseimg2.jpg" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">NatureOnus Vegan Cheddar Cheese Block 250gms </h5>
+              <p class="card-text">Price: Rs.55</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/cheesesection/cheeseimg3.jpg" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">D'lecta 100% Mozzarella Cheese Block 200g </h5>
+              <p class="card-text">Price: Rs.95</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/cheesesection/cheeseimg4.jpg" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">D’lecta Cream Cheese 400g – For Delicious Cheesecake</h5>
+              <p class="card-text">Price:Rs.110</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--curd section-->
+      <div>
+        <h2 id="curd">curd</h2>
+      </div>
+      <div class="row g-3">
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/curdimges/curdimg1.webp" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Milky Mist Set Curd, 1 Kg</h5>
+              <p class="card-text">Price: Rs.98</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/curdimges/curdimg2.webp" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Heritage Total Curd, 400 g</h5>
+              <p class="card-text">Price:Rs.40</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/curdimges/curdimg3.webp" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Epigamia Natural Greek Yogurt, 85g |</h5>
+              <p class="card-text">Price:Rs.90</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/curdimges/curdimg4.webp" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Akshayakalpa - Organic Curd, 200g, Pouch</h5>
+              <p class="card-text">Price:Rs.70</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!--butter section-->
+      <div>
+        <h2 id="butter">Butter</h2>
+      </div>
+      <div class="row g-3">
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/butterimgages/butterimg1.webp" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Amul Salted Butter Pasteurised, 100 Grams</h5>
+              <p class="card-text">Price: Rs.40</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/butterimgages/img2.webp" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Heritage Table Butter Pouch,500 Gram,Salted</h5>
+              <p class="card-text">Price: Rs.45</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/butterimgages/img3.webp" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Pintola All Natural Peanut Butter Crunchy 350g</h5>
+              <p class="card-text">Price: Rs.55</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/butterimgages/img4.jpg" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">ALPINO Natural Peanut Butter Crunch 1kg - 100% </h5>
+              <p class="card-text">Price: Rs.60</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
 
   </section>
 
   <!--cardsection for masala & spices-->
-  
-      
-     <section>
-      
-     <div class="cardsection3" id="masala">
+
+
+  <section>
+
+    <div class="cardsection3" id="masala">
+      <div>
         <h1 class="text-center">Masala products</h1>
-        
-         <h2 id="turmeric">Turmeric</h2>
-         <div class="row g-3">
-            <div class="col-md-3 col-sm-6">
-            <div class="card">
-              <img src="assets/turmericimges/img1.jpg" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Sarwah Turmeric Powder | No Artificial Colors & Flavor | Grounded With Cool Grinding (500 Gms)</h5>
-                <p class="card-text">Price:Rs</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-            </div>
 
-            <div class="col-md-3 col-sm-6">
-             <div class="card">
-              <img src="assets/turmericimges/img2.jpg" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Tata Sampann Turmeric Powder With Natural Oils, 200g, Haldi Powder</h5>
-                <p class="card-text">Price:Rs</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-            </div>
-
-             <div class="col-md-3 col-sm-6">
-              <div class="card">
-              <img src="assets/turmericimges/img3.jpg" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Aashirvaad Turmeric Powder, 200g, Natural Golden Turmeric Powder</h5>
-                <p class="card-text">Price: Rs</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-             </div>
-
-            <div class="col-md-3 col-sm-6">
-             <div class="card">
-              <img src="assets/turmericimges/img4.jpg" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Catch Turmeric Powder | Haldi Powder, 500g</h5>
-                <p class="card-text">Price:Rs</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-        </div>
-         </div>
-        
-
-         <h2 id="chilli">Chilli Powder</h2>
-         <div class="row g-3">
-             <div class="col-md-3 col-sm-6">
-               <div class="card">
-              <img src="assets/chillipowder/img1.jpg" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">MTR Chilli Powder | Quality Chilli Powder | For all your Indian Meals | 100gram</h5>
-                <p class="card-text">Price: Rs</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-             </div>
-
-             <div class="col-md-3 col-sm-6">
-              <div class="card">
-              <img src="assets/chillipowder/img2.webp" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Aachi Chilli Powder</h5>
-                <p class="card-text">Price: Rs</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-             </div>
-
-             <div class="col-md-3 col-sm-6">
-              <div class="card">
-              <img src="assets/chillipowder/Eastern-Chilli-Powder.webp" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Eastern Chilli Powder</h5>
-                <p class="card-text">Price: Rs</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-             </div>
-
-             <div class="col-md-3 col-sm-6">
-              <div class="card">
-              <img src="assets/chillipowder/aashirvaadchillipowder.webp" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Aashirvaad Chilli Powder, Red Hot Chilli Powder</h5>
-                <p class="card-text">Price: Rs</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-            </div>
-         </div>
-        
-
-
-            <h2 id="cumin">Cumin</h2>
-            
-            <div class="row g-3"> 
-             <div class="col-md-3 col-sm-6">
-              <div class="card">
-              <img src="assets/chillipowder/Everest-Cumin-Powder.webp" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Everest-Cumin-Powder</h5>
-                <p class="card-text">Price: Rs</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-             </div>
-
-              <div class="col-md-3 col-sm-6">
-              <div class="card">
-              <img src="assets/chillipowder/Eastern-Cumin-Powder.webp" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Eastern-Cumin-Powder</h5>
-                <p class="card-text">Price: Rs</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-              </div>
-
-            <div class="col-md-3 col-sm-6">
-               <div class="card">
-              <img src="assets/chillipowder/Everest-Tikhalal-Powder-Pouch100g.webp" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Everest-Tikhalal-Powder-Pouch 100g</h5>
-                <p class="card-text">Price: Rs</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6">
-              <div class="card">
-              <img src="assets/chillipowder/MTR-Spice-Jeera-Powder 100g.webp" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">MTR-Spice-Jeera-Powder 100g</h5>
-                <p class="card-text">Price: Rs</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-            </div>
-            </div>
-        
-        
-
-            <h2 id="garam">Garam masala</h2>
-            <div class="row g-3"> 
-            <div class="col-md-3 col-sm-6">
-               <div class="card">
-              <img src="assets/garammasala/Aachi-Masala-Garam.webp" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Aachi Garam Masala 100g</h5>
-                <p class="card-text">Price:Rs</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-            </div>
-
-             <div class="col-md-3 col-sm-6">
-               <div class="card">
-              <img src="assets/garammasala/Everest-Garam-Masala.webp" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Everest Garam Masala 100g</h5>
-                <p class="card-text">Price: Rs</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-             </div>
-
-            <div class="col-md-3 col-sm-6">
-              <div class="card">
-              <img src="assets/garammasala/MTR-Special-Garam-Masala.webp" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">MTR Special Garam Masala 100g</h5>
-                <p class="card-text">Price:Rs</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6">
-              <div class="card">
-              <img src="assets/garammasala/Tata-Sampann-Garam-Masala-Powder-with-Natural-Oils-Rich-Aroma-Flavour.webp" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Tata Sampann Garam Masala Powder 100g</h5>
-                <p class="card-text">Price: Rs</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-            </div>
-            </div>
+        <h2 id="turmeric">Turmeric</h2>
       </div>
+      <div class="row g-3">
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/turmericimges/img1.jpg" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Sarwah Turmeric Powder (500 Gms)</h5>
+              <p class="card-text">Price:Rs.60</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/turmericimges/img2.jpg" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Tata Sampann Turmeric Powder 200g, </h5>
+              <p class="card-text">Price:Rs.40</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/turmericimges/img3.jpg" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Aashirvaad Turmeric Powder, 200g</h5>
+              <p class="card-text">Price: Rs.55</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/turmericimges/img4.jpg" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Catch Turmeric Powder, 500g</h5>
+              <p class="card-text">Price:Rs.80</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--chilli powder section-->
+      <div>
+        <h2 id="chilli">Chilli Powder</h2>
+      </div>
+      <div class="row g-3">
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/chillipowder/img1.jpg" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">MTR Chilli Powder 100gram</h5>
+              <p class="card-text">Price: Rs.20</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/chillipowder/img2.webp" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Aachi Chilli Powder</h5>
+              <p class="card-text">Price: Rs.30</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/chillipowder/Eastern-Chilli-Powder.webp" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Eastern Chilli Powder</h5>
+              <p class="card-text">Price: Rs.15</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/chillipowder/aashirvaadchillipowder.webp" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Aashirvaad Chilli Powder 100g</h5>
+              <p class="card-text">Price: Rs.25</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--cumin powder section-->
+      <div>
+        <h2 id="cumin">Cumin</h2>
+      </div>
+      <div class="row g-3">
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/chillipowder/Everest-Cumin-Powder.webp" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Everest-Cumin-Powder 100g</h5>
+              <p class="card-text">Price: Rs.40</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/chillipowder/Eastern-Cumin-Powder.webp" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Eastern-Cumin-Powder 100g</h5>
+              <p class="card-text">Price: Rs.35</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/chillipowder/Everest-Tikhalal-Powder-Pouch100g.webp" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Everest Tikhalal Powder 100g</h5>
+              <p class="card-text">Price: Rs.25</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/chillipowder/MTR-Spice-Jeera-Powder 100g.webp" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">MTR Spice Jeera Powder 100g</h5>
+              <p class="card-text">Price: Rs.40</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--garam masala powder section-->
+      <div>
+        <h2 id="garam">Garam masala</h2>
+      </div>
+      <div class="row g-3">
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/garammasala/Aachi-Masala-Garam.webp" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Aachi Garam Masala 100g</h5>
+              <p class="card-text">Price:Rs.</p>25
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/garammasala/Everest-Garam-Masala.webp" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Everest Garam Masala 100g</h5>
+              <p class="card-text">Price: Rs.30</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/garammasala/MTR-Special-Garam-Masala.webp" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">MTR Special Garam Masala 100g</h5>
+              <p class="card-text">Price:Rs.25</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/garammasala/Tata-Sampann-Garam-Masala-Powder-with-Natural-Oils-Rich-Aroma-Flavour.webp"
+              alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Tata Sampann Garam Masala Powder 100g</h5>
+              <p class="card-text">Price: Rs.45</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!--cardsection for cleaning products-->
-  
-      
-      <section>
-      
+
+
+  <section>
+
     <div class="cardsection4" id="cleaning">
+      <div>
         <h1 class="text-center">Cleaning Products</h1>
         <h2 id="detergent">Washing liquids</h2>
-        <div class="row g-3">
-            <div class="col-md-3 col-sm-6">
-            <div class="card">
-              <img src="assets/cleaningproducts/Godrej-Fab-Machine-Hand-Wash-Detergent-Liquid-Refill-Pouch.webp" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Godrej Fab Machine & Hand Wash Detergent Liquid Refill Pouch 950ml</h5>
-                <p class="card-text">Price: Rs</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
+      </div>
+      <div class="row g-3">
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/cleaningproducts/Godrej-Fab-Machine-Hand-Wash-Detergent-Liquid-Refill-Pouch.webp"
+              alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Godrej Fab Machine & Hand Wash Detergent Liquid Pouch 950ml</h5>
+              <p class="card-text">Price: Rs.300</p>
+              <button class="btn btn-primary">Add to Cart</button>
             </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6">
-              <div class="card">
-              <img src="assets/cleaningproducts/Rin-Matic-Top-Load-Detergent-Liquid-Pouch.webp" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Rin Matic Top Load Detergent Liquid | Pouch</h5>
-                <p class="card-text">Price: Rs</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-            </div>
-
-             <div class="col-md-3 col-sm-6">
-              <div class="card">
-              <img src="assets/cleaningproducts/Surf-Excel-Matic-Top-Load-Detergent-Liquid-Pouch.webp" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Surf Excel Matic Top Load Detergent Liquid | Pouch</h5>
-                <p class="card-text">Price: Rs</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-             </div>
-
-            <div class="col-md-3 col-sm-6">
-               <div class="card">
-              <img src="assets/cleaningproducts/Ariel-Stain-Removal-Top-Load-Washing-Machine-Detergent-Liquid.webp" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Ariel Stain Removal Top Load Washing Machine Detergent Liquid</h5>
-                <p class="card-text">Price: Rs.749</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-            </div>
+          </div>
         </div>
 
-         <h2 id="Soap">Kitchen cleaners</h2>
-        <div class="row g-3">
-             <div class="col-md-3 col-sm-6">
-               <div class="card">
-              <img src="assets/cleaningproducts/Lizol-Kitchen-Cleaning-Spray-Cleans-Stove-Chimney-Sink.webp" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Lizol Kitchen Cleaning Spray | Cleans Stove, Chimney & Sink</h5>
-                <p class="card-text">Price:Rs.168</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/cleaningproducts/Rin-Matic-Top-Load-Detergent-Liquid-Pouch.webp" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Rin Matic Top Load Detergent Liquid | Pouch 500ml</h5>
+              <p class="card-text">Price: Rs.215</p>
+              <button class="btn btn-primary">Add to Cart</button>
             </div>
-             </div>
-
-             <div class="col-md-3 col-sm-6">
-               <div class="card">
-              <img src="assets/cleaningproducts/Mr-Muscle-Mm-Kitchen-Clnr-Refill.webp" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Mr. Muscle Mm Kitchen Clnr Refill</h5>
-                <p class="card-text">Price:Rs.143</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-             </div>
-
-             <div class="col-md-3 col-sm-6">
-               <div class="card">
-              <img src="assets/cleaningproducts/Vim-French-Lavender-With-Sage-Floor-Cleaner.webp" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Vim French Lavender With Sage Floor Cleaner 500ml</h5>
-                <p class="card-text">Price: Rs.120</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-             </div>
-
-             <div class="col-md-3 col-sm-6">
-               <div class="card">
-              <img src="assets/cleaningproducts/Beco-Natural-Floor-Cleaner-Liquid.webp" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Beco Natural Floor Cleaner Liquid</h5>
-                <p class="card-text">Price: Rs.130</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-            </div>
+          </div>
         </div>
 
-
-
-
-        <h2 id="Phenyl">Bathroom Cleaners</h2>
-            
-        <div class="row g-3"> 
-             <div class="col-md-3 col-sm-6">
-               <div class="card">
-              <img src="assets/cleaningproducts/Domex-Fresh-Guard-with-Ocean-Fresh-Fragrance-Disinfectant-Toilet-Cleaner.webp" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Domex Fresh Guard with Ocean Fresh Fragrance | Disinfectant Toilet Cleaner 1L</h5>
-                <p class="card-text">Price: Rs.140</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/cleaningproducts/Surf-Excel-Matic-Top-Load-Detergent-Liquid-Pouch.webp"
+              alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Surf Excel Matic Top Load Detergent Liquid | Pouch 800ml</h5>
+              <p class="card-text">Price: Rs.345</p>
+              <button class="btn btn-primary">Add to Cart</button>
             </div>
-             </div>
-
-              <div class="col-md-3 col-sm-6">
-               <div class="card">
-              <img src="assets/cleaningproducts/Vooki-Toilet-Bowl-Cleaner-Liquid.webp" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Vooki Toilet Bowl Cleaner Liquid</h5>
-                <p class="card-text">Price: Rs.90</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-              </div>
-
-            <div class="col-md-3 col-sm-6">
-               <div class="card">
-              <img src="assets/cleaningproducts/Harpic-Floral-Bathroom-Cleaner-Liquid-Removes-Bathroom-Stains.webp" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Harpic Floral Bathroom Cleaner Liquid | Removes Bathroom Stains</h5>
-                <p class="card-text">Price: Rs.110</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6">
-              <div class="card">
-              <img src="assets/cleaningproducts/Dettol-Fresh-Lime-Liquid-Disinfectant.webp" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Dettol Fresh Lime Liquid Disinfectant</h5>
-                <p class="card-text">Price: Rs.237</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-            </div>
-
+          </div>
         </div>
-        
 
-       <!-- <h2 id="toilet"></h2>
-        <div class="row g-3"> 
-            <div class="col-md-3 col-sm-6">
-               <div class="card">
-              <img src="" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Product 2</h5>
-                <p class="card-text">Price: $0.00</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/cleaningproducts/Ariel-Stain-Removal-Top-Load-Washing-Machine-Detergent-Liquid.webp"
+              alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Ariel Stain Removal Top Load Washing Machine Detergent Liquid 1L</h5>
+              <p class="card-text">Price: Rs.749</p>
+              <button class="btn btn-primary">Add to Cart</button>
             </div>
+          </div>
+        </div>
+      </div>
+      <!--kitchen cleaners-->
+      <div>
+        <h2 id="kitchen">Kitchen cleaners</h2>
+      </div>
+      <div class="row g-3">
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/cleaningproducts/Lizol-Kitchen-Cleaning-Spray-Cleans-Stove-Chimney-Sink.webp"
+              alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Lizol Kitchen Cleaning Spray</h5>
+              <p class="card-text">Price:Rs.168</p>
+              <button class="btn btn-primary">Add to Cart</button>
             </div>
+          </div>
+        </div>
 
-             <div class="col-md-3 col-sm-6">
-              <div class="card">
-              <img src="" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Product 2</h5>
-                <p class="card-text">Price: $0.00</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/cleaningproducts/Mr-Muscle-Mm-Kitchen-Clnr-Refill.webp" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Mr. Muscle Mm Kitchen Clnr Refill</h5>
+              <p class="card-text">Price:Rs.143</p>
+              <button class="btn btn-primary">Add to Cart</button>
             </div>
-             </div>
+          </div>
+        </div>
 
-            <div class="col-md-3 col-sm-6">
-               <div class="card">
-              <img src="" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Product 2</h5>
-                <p class="card-text">Price: $0.00</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/cleaningproducts/Vim-French-Lavender-With-Sage-Floor-Cleaner.webp" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Vim French Lavender Cleaner 500ml</h5>
+              <p class="card-text">Price: Rs.120</p>
+              <button class="btn btn-primary">Add to Cart</button>
             </div>
-            </div>
+          </div>
+        </div>
 
-            <div class="col-md-3 col-sm-6">
-               <div class="card">
-              <img src="" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Product 2</h5>
-                <p class="card-text">Price: $0.00</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/cleaningproducts/Beco-Natural-Floor-Cleaner-Liquid.webp" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Beco Natural Floor Cleaner Liquid</h5>
+              <p class="card-text">Price: Rs.130</p>
+              <button class="btn btn-primary">Add to Cart</button>
             </div>
-            </div>
+          </div>
+        </div>
+      </div>
 
-      </div>--> 
+
+      <!--bathroom cleaners-->
+      <div>
+        <h2 id="bathroom">Bathroom Cleaners</h2>
+      </div>
+
+      <div class="row g-3">
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img
+              src="assets/cleaningproducts/Domex-Fresh-Guard-with-Ocean-Fresh-Fragrance-Disinfectant-Toilet-Cleaner.webp"
+              alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Domex Fresh Guard with Ocean Fresh Fragrance 1L</h5>
+              <p class="card-text">Price: Rs.140</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/cleaningproducts/Vooki-Toilet-Bowl-Cleaner-Liquid.webp" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Vooki Toilet Bowl Cleaner Liquid</h5>
+              <p class="card-text">Price: Rs.90</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/cleaningproducts/Harpic-Floral-Bathroom-Cleaner-Liquid-Removes-Bathroom-Stains.webp"
+              alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Harpic Floral Bathroom Cleaner Liquid</h5>
+              <p class="card-text">Price: Rs.110</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/cleaningproducts/Dettol-Fresh-Lime-Liquid-Disinfectant.webp" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Dettol Fresh Lime Liquid Disinfectant</h5>
+              <p class="card-text">Price: Rs.237</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
 
   </section>
 
 
-   <!--cardsection for Healthcare products-->
-   <section>
-      
-      <div class="cardsection5" id="healthcare">
+  <!--cardsection for Healthcare products-->
+  <section>
+
+    <div class="cardsection5" id="healthcare">
+      <div>
         <h1 class="text-center">HealthCare</h1>
         <h2 id="Soap">Soap</h2>
-        <div class="row g-3">
-            <div class="col-md-3 col-sm-6">
-            <div class="card">
-              <img src="assets/healthcare/Medimix-Ayurvedic-Classic-18-Herbs-Soap.webp" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Medimix Ayurvedic Classic 18 Herbs Soap</h5>
-                <p class="card-text">Price: Rs.52</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6">
-             <div class="card">
-              <img src="assets/healthcare/Lux-International-Creamy-White-Soap-Bar.webp" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Lux International Creamy White Soap Bar</h5>
-                <p class="card-text">Price: Rs.40</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-            </div>
-
-             <div class="col-md-3 col-sm-6">
-               <div class="card">
-              <img src="assets/healthcare/Pears-Moisturising-Bathing-Bar-Soap-with-Glycerine-Pure-Gentle-For-Golden-Glow.webp" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Pears Moisturising Bathing Bar Soap with Glycerine Pure & Gentle - For Golden Glow</h5>
-                <p class="card-text">Price:Rs.50</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-             </div>
-
-            <div class="col-md-3 col-sm-6">
-              <div class="card">
-              <img src="assets/healthcare/Cinthol-Lime-Bath-Soap.webp" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Cinthol Lime Bath Soap</h5>
-                <p class="card-text">Price: Rs.44</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-           </div>
-        </div>
-
-         <h2 id="Shampoo">Shampoo</h2>
-        <div class="row g-3">
-             <div class="col-md-3 col-sm-6">
-             <div class="card">
-              <img src="assets/healthcare/Dove-Hair-Fall-Rescue-Shampoo.webp" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Dove Hair Fall Rescue Shampoo 650ml</h5>
-                <p class="card-text">Price: Rs.245</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-             </div>
-
-             <div class="col-md-3 col-sm-6">
-              <div class="card">
-              <img src="assets/healthcare/Head-Shoulders-Anti-Dandruff-Smooth-Silky-Shampoo.webp" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Head & Shoulders Anti-Dandruff Smooth & Silky Shampoo 200ml</h5>
-                <p class="card-text">Price: Rs.215</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-             </div>
-
-             <div class="col-md-3 col-sm-6">
-               <div class="card">
-              <img src="assets/healthcare/Clinic-Plus-Strong-Long-Shampoo-with-Milk-Proteins-and-Multivitamins.webp" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Clinic Plus Strong & Long Shampoo with Milk Proteins and Multivitamins 180ml</h5>
-                <p class="card-text">Price: Rs.140</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-             </div>
-
-             <div class="col-md-3 col-sm-6">
-               <div class="card">
-              <img src="assets/healthcare/Meera-Hairfall-Care-Shampoo.webp" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Meera Hairfall Care Shampoo 180ml</h5>
-                <p class="card-text">Price: Rs.190</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-            </div>
-        </div>
-
-
-
-            <h2 id="handsanitizer">Hand Sanitizer</h2>
-            
-            <div class="row g-3"> 
-             <div class="col-md-3 col-sm-6">
-              <div class="card">
-              <img src="assets/healthcare/Dettol-Antiseptic-Liquid-For-First-Aid-Surface-Disinfection-And-Personal-Hygiene.webp" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Dettol Antiseptic Liquid For First Aid - Surface Disinfection And Personal Hygiene 1.3L</h5>
-                <p class="card-text">Price: RS.450</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-             </div>
-
-              <div class="col-md-3 col-sm-6">
-               <div class="card">
-              <img src="assets/healthcare/Palmolive-Black-Orchid-And-Milk-Liquid-Hand-Wash.webp" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Palmolive Black Orchid And Milk Liquid Hand Wash 250ml</h5>
-                <p class="card-text">Price: Rs.100</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-              </div>
-
-            <div class="col-md-3 col-sm-6">
-               <div class="card">
-              <img src="assets/healthcare/Fiama-Relax-Hand-Wash-400-ml-Bottle-Lavender-Ylang-Ylang.webp" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Fiama Relax Hand Wash, 400 ml Bottle, Lavender & Ylang Ylang</h5>
-                <p class="card-text">Price: Rs.144</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6">
-              <div class="card">
-              <img src="assets/healthcare/Santoor-Foaming-Handwash.webp" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Santoor Foaming Handwash 700ml</h5>
-                <p class="card-text">Price:Rs.153</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-            </div>
-
-           </div>
-        
-
-         <h2 id="Perfumes">Perfumes</h2>
-            <div class="row g-3"> 
-            <div class="col-md-3 col-sm-6">
-             <div class="card">
-              <img src="assets/healthcare/Beardo-Whisky-Smoke-Bourbon-Perfume-For-Men-Eau-De-Parfum.webp" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Beardo Whisky Smoke Bourbon Perfume For Men Eau De Parfum 50ml</h5>
-                <p class="card-text">Price: Rs.350</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-            </div>
-
-             <div class="col-md-3 col-sm-6">
-              <div class="card">
-              <img src="assets/healthcare/La-French-Cuddle-Perfume.webp" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">La French Cuddle Perfume 40ml</h5>
-                <p class="card-text">Price:Rs.200</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-             </div>
-
-            <div class="col-md-3 col-sm-6">
-           <div class="card">
-              <img src="assets/healthcare/Wild-Stone-Edge-Perfume-for-Men.webp" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Wild Stone Edge Perfume for Men 100ml</h5>
-                <p class="card-text">Price: Rs.395</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6">
-             <div class="card">
-              <img src="assets/healthcare/Villain-Oud-Eau-De-Parfumpremium-Luxury-Perfume-For-Men.webp" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Villain Oud Eau De Parfumpremium Luxury Perfume For Men</h5>
-                <p class="card-text">Price:RS.450</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-            </div>
-
-          </div>
       </div>
+
+      <div class="row g-3">
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/healthcare/Medimix-Ayurvedic-Classic-18-Herbs-Soap.webp" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Medimix Ayurvedic Classic 18 Herbs Soap</h5>
+              <p class="card-text">Price: Rs.52</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/healthcare/Lux-International-Creamy-White-Soap-Bar.webp" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Lux International Creamy White Soap Bar</h5>
+              <p class="card-text">Price: Rs.40</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img
+              src="assets/healthcare/Pears-Moisturising-Bathing-Bar-Soap-with-Glycerine-Pure-Gentle-For-Golden-Glow.webp"
+              alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Pears Moisturising Bathing Bar Soap </h5>
+              <p class="card-text">Price:Rs.50</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/healthcare/Cinthol-Lime-Bath-Soap.webp" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Cinthol Lime Bath Soap</h5>
+              <p class="card-text">Price: Rs.44</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--shampoo section-->
+      <div>
+        <h2 id="Shampoo">Shampoo</h2>
+      </div>
+
+      <div class="row g-3">
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/healthcare/Dove-Hair-Fall-Rescue-Shampoo.webp" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Dove Hair Fall Rescue Shampoo 650ml</h5>
+              <p class="card-text">Price: Rs.245</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/healthcare/Head-Shoulders-Anti-Dandruff-Smooth-Silky-Shampoo.webp" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Head & Shoulders Anti-Dandruff Smooth & Silky Shampoo 200ml</h5>
+              <p class="card-text">Price: Rs.215</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/healthcare/Clinic-Plus-Strong-Long-Shampoo-with-Milk-Proteins-and-Multivitamins.webp"
+              alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Clinic Plus Strong & Long Shampoo 180ml</h5>
+              <p class="card-text">Price: Rs.140</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/healthcare/Meera-Hairfall-Care-Shampoo.webp" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Meera Hairfall Care Shampoo 180ml</h5>
+              <p class="card-text">Price: Rs.190</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--shampoo section-->
+
+      <div>
+        <h2 id="handsanitizer">Hand Sanitizer</h2>
+      </div>
+
+      <div class="row g-3">
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img
+              src="assets/healthcare/Dettol-Antiseptic-Liquid-For-First-Aid-Surface-Disinfection-And-Personal-Hygiene.webp"
+              alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Dettol Antiseptic Liquid For First Aid 1.3L</h5>
+              <p class="card-text">Price: RS.450</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/healthcare/Palmolive-Black-Orchid-And-Milk-Liquid-Hand-Wash.webp" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Palmolive Black Orchid And Milk Liquid Hand Wash 250ml</h5>
+              <p class="card-text">Price: Rs.100</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/healthcare/Fiama-Relax-Hand-Wash-400-ml-Bottle-Lavender-Ylang-Ylang.webp"
+              alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Fiama Relax Hand Wash, 400 ml Bottle, Lavender & Ylang Ylang</h5>
+              <p class="card-text">Price: Rs.144</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/healthcare/Santoor-Foaming-Handwash.webp" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Santoor Foaming Handwash 700ml</h5>
+              <p class="card-text">Price:Rs.153</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!--shampoo section-->
+
+      <div>
+        <h2 id="Perfumes">Perfumes</h2>
+      </div>
+      <div class="row g-3">
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/healthcare/Beardo-Whisky-Smoke-Bourbon-Perfume-For-Men-Eau-De-Parfum.webp"
+              alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Beardo Whisky Smoke Bourbon Perfume 50ml</h5>
+              <p class="card-text">Price: Rs.350</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/healthcare/La-French-Cuddle-Perfume.webp" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">La French Cuddle Perfume 40ml</h5>
+              <p class="card-text">Price:Rs.200</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/healthcare/Wild-Stone-Edge-Perfume-for-Men.webp" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Wild Stone Edge Perfume for Men 100ml</h5>
+              <p class="card-text">Price: Rs.395</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/healthcare/Villain-Oud-Eau-De-Parfumpremium-Luxury-Perfume-For-Men.webp"
+              alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Villain Oud Eau De Parfumpremium Luxury Perfume 100ml</h5>
+              <p class="card-text">Price:RS.450</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
 
   </section>
 
-   <!--cardsection for instant products-->
+  <!--cardsection for instant products-->
   <section>
-      
-      <div class="cardsection6" id="instant">
+
+    <div class="cardsection6" id="instant">
+
+      <div>
         <h1 class="text-center">Instant products</h1>
         <h2 id="noodles">Noodles</h2>
-        <div class="row g-3">
-            <div class="col-md-3 col-sm-6">
-           <div class="card">
-              <img src="" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Product 2</h5>
-                <p class="card-text">Price: $0.00</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
+      </div>
+      <div class="row g-3">
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/instandproducts/yippee.webp" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">YiPPee! Magic Masala Noodles - 1 pack(280gram)</h5>
+              <p class="card-text">Price: Rs.54</p>
+              <button class="btn btn-primary add-to-cart-btn" data-bs-toggle="modal" data-bs-target="#cartModal"
+                data-product="YiPPee! Magic Masala Noodles - 1 pack(280gram)" data-price="54"
+                data-image="assets/instandproducts/yippee.webp">
+                Add to Cart
+              </button>
             </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6">
-           <div class="card">
-              <img src="" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Product 2</h5>
-                <p class="card-text">Price: $0.00</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-            </div>
-
-             <div class="col-md-3 col-sm-6">
-              <div class="card">
-              <img src="" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Product 2</h5>
-                <p class="card-text">Price: $0.00</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-             </div>
-
-            <div class="col-md-3 col-sm-6">
-             <div class="card">
-              <img src="" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Product 2</h5>
-                <p class="card-text">Price: $0.00</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-            </div>
-        </div>
-
-         <h2 id="oats">Oats</h2>
-        <div class="row g-3">
-             <div class="col-md-3 col-sm-6">
-               <div class="card">
-              <img src="" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Product 2</h5>
-                <p class="card-text">Price: $0.00</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-             </div>
-
-             <div class="col-md-3 col-sm-6">
-            <div class="card">
-              <img src="" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Product 2</h5>
-                <p class="card-text">Price: $0.00</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-             </div>
-
-             <div class="col-md-3 col-sm-6">
-              <div class="card">
-              <img src="" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Product 2</h5>
-                <p class="card-text">Price: $0.00</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-             </div>
-
-             <div class="col-md-3 col-sm-6">
-             <div class="card">
-              <img src="" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Product 2</h5>
-                <p class="card-text">Price: $0.00</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-            </div>
+          </div>
         </div>
 
 
 
-
-            <h2 id="pasta">Pasta</h2>
-            
-            <div class="row g-3"> 
-             <div class="col-md-3 col-sm-6">
-               <div class="card">
-              <img src="" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Product 2</h5>
-                <p class="card-text">Price: $0.00</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img
+              src="assets/instandproducts/MAGGI-2-Minute-Instant-Noodles-Masala-Noodles-Made-With-Quality-Spices.webp"
+              alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">MAGGI 2-Minute Instant Noodles-1pack(70g)</h5>
+              <p class="card-text">Price:Rs.15</p>
+              <button class="btn btn-primary add-to-cart-btn" data-bs-toggle="modal" data-bs-target="#cartModal"
+                data-product="MAGGI 2-Minute Instant Noodles-1pack(70g)" data-price="15"
+                data-image="assets/instandproducts/MAGGI-2-Minute-Instant-Noodles-Masala-Noodles-Made-With-Quality-Spices.webp">Add
+                to Cart</button>
             </div>
-             </div>
-
-              <div class="col-md-3 col-sm-6">
-               <div class="card">
-              <img src="" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Product 2</h5>
-                <p class="card-text">Price: $0.00</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-              </div>
-
-            <div class="col-md-3 col-sm-6">
-              <div class="card">
-              <img src="" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Product 2</h5>
-                <p class="card-text">Price: $0.00</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6">
-             <div class="card">
-              <img src="" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Product 2</h5>
-                <p class="card-text">Price: $0.00</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-            </div>
-
           </div>
-        
+        </div>
 
-         <h2 id="soups">Soups</h2>
-            <div class="row g-3"> 
-            <div class="col-md-3 col-sm-6">
-             <div class="card">
-              <img src="" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Product 2</h5>
-                <p class="card-text">Price: $0.00</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/instandproducts/Too-Yumm-K-Bomb-Ramen-Hot-n-Spicy-Instant-Noodles-Korean-Veg.webp"
+              alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Too Yumm K-Bomb Ramen | Korean Veg 1pack (79g)</h5>
+              <p class="card-text">Price: Rs.39</p>
+              <button class="btn btn-primary add-to-cart-btn" data-bs-toggle="modal" data-bs-target="#cartModal"
+                data-product="Too Yumm K-Bomb Ramen | Korean Veg 1pack (79g)" data-price="39"
+                data-image="assets/instandproducts/Too-Yumm-K-Bomb-Ramen-Hot-n-Spicy-Instant-Noodles-Korean-Veg.webp">
+                Add to Cart</button>
             </div>
-            </div>
-
-             <div class="col-md-3 col-sm-6">
-              <div class="card">
-              <img src="" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Product 2</h5>
-                <p class="card-text">Price: $0.00</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-             </div>
-
-            <div class="col-md-3 col-sm-6">
-              <div class="card">
-              <img src="" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Product 2</h5>
-                <p class="card-text">Price: $0.00</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6">
-              <div class="card">
-              <img src="" alt="Product Image">
-              <div class="card-body">
-                <h5 class="card-title">Product 2</h5>
-                <p class="card-text">Price: $0.00</p>
-                <button class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-            </div>
-
           </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/instandproducts/Wok-Tok-by-Veeba-Instant-Cup-Noodles-Chowmein.webp" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Wok Tok by Veeba Instant Cup Noodles Chowmein</h5>
+              <p class="card-text">Price: Rs.60</p>
+              <button class="btn btn-primary add-to-cart-btn" data-bs-toggle="modal" data-bs-target="#cartModal"
+                data-product="Wok Tok by Veeba Instant Cup Noodles Chowmein" data-price="60" ;
+                data-image="assets/instandproducts/Wok-Tok-by-Veeba-Instant-Cup-Noodles-Chowmein.webp">Add to
+                Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--section for oats products-->
+      <div>
+        <h2 id="oats">Oats</h2>
+      </div>
+      <div class="row g-3">
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/instandproducts/Quaker-Oats.webp" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Quaker Oats -1pack (500g)</h5>
+              <p class="card-text">Price: Rs.70</p>
+              <button class="btn btn-primary add-to-cart-btn" data-bs-toggle="modal" data-bs-target="#cartModal"
+                data-product="Quaker Oats -1pack (500g)" data-price="70" ;
+                data-image="assets/instandproducts/Quaker-Oats.webp">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img
+              src="assets/instandproducts/Saffola-Oats-Instant-Rolled-Oats-Soft-Creamy-Oats-Power-of-Protein-Iron-Fibre.webp"
+              alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Saffola Oats, 1pack (500g)</h5>
+              <p class="card-text">Price:Rs.85</p>
+              <button class="btn btn-primary add-to-cart-btn" data-bs-toggle="modal" data-bs-target="#cartModal"
+                data-product="Saffola Oats, 1pack (500g)" data-price="85" ;
+                data-image="assets/instandproducts/Saffola-Oats-Instant-Rolled-Oats-Soft-Creamy-Oats-Power-of-Protein-Iron-Fibre.webp">Add
+                to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/instandproducts/Sundrop-Heart-Plain-Oats.webp" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Sundrop Heart Plain Oats 1kg</h5>
+              <p class="card-text">Price: Rs.140</p>
+              <button class="btn btn-primary add-to-cart-btn" data-bs-toggle="modal" data-bs-target="#cartModal"
+                data-product="Sundrop Heart Plain Oats 1kg" data-price="140" ;
+                data-image="assets/instandproducts/Sundrop-Heart-Plain-Oats.webp">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/instandproducts/Manna-Supergrains-Oats-Palak-Khichdi.webp" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Manna Supergrains Oats - Palak Khichdi</h5>
+              <p class="card-text">Price: Rs.199</p>
+              <button class="btn btn-primary add-to-cart-btn" data-bs-toggle="modal" data-bs-target="#cartModal"
+                data-product="Manna Supergrains Oats - Palak Khichdi" data-price="199" ;
+                data-image="assets/instandproducts/Manna-Supergrains-Oats-Palak-Khichdi.webp">Add to Cart</button>
+            </div>
+          </div>
+        </div>
       </div>
 
+
+      <!--section for pasta products-->
+      <div>
+        <h2 id="pasta">Pasta</h2>
+      </div>
+      <div class="row g-3">
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/instandproducts/Bambino-Elbow-Macaroni-Pasta.webp" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Bambino Elbow Macaroni Pasta 400g</h5>
+              <p class="card-text">Price: Rs.51</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/instandproducts/MAGGI-Pazzta-Instant-Pasta-Cheese-Macaroni.webp" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">MAGGI Pazzta Instant Pasta - Cheese Macaroni 75g</h5>
+              <p class="card-text">Price: Rs.35</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/instandproducts/BORGES-Mini-Penne-Rigate-Durum-Wheat-Pasta.webp" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">BORGES Mini Penne Rigate Durum Wheat Pasta 350g</h5>
+              <p class="card-text">Price:Rs.104</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/instandproducts/Chef-s-Basket-Macroni.webp" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Chef's Basket Macroni 850g</h5>
+              <p class="card-text">Price: Rs.90</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!--section for soup products-->
+      <div>
+        <h2 id="soups">Soups</h2>
+      </div>
+
+      <div class="row g-3">
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/instandproducts/Knorr-Chinese-Hot-And-Sour-Veg-Soup.webp" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Knorr Chinese Hot And Sour Veg Soup 40g</h5>
+              <p class="card-text">Price: Rs.59</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/instandproducts/Chings-Instant-Soup-Hot-And-Sour.webp" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Chings Instant Soup - Hot And Sour 55g</h5>
+              <p class="card-text">Price: Rs.50</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/instandproducts/Ching-s-Secret-Sweet-Corn-Soup.webp" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Ching's Secret Sweet Corn Soup 55g</h5>
+              <p class="card-text">Price: Rs.53</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <img src="assets/instandproducts/Knorr-International-Mexican-Tomato-Corn-Soup.webp" alt="Product Image">
+            <div class="card-body">
+              <h5 class="card-title">Knorr International Mexican Tomato Corn Soup 50g</h5>
+              <p class="card-text">Price: Rs.65</p>
+              <button class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
   </section>
-          
+
+
+
+  <!--modal section for the add to cart-->
+  <section>
+    <!--section for cart modal opening of products-->
+
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="cartModalLabel">Product Added to Cart</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body d-flex align-items-center">
+            <img id="modalImage" src="" alt="Product Image"
+              style="width:100px; height:100px; object-fit:cover; margin-right:15px;">
+            <div>
+              <h5 id="modalProductName"></h5>
+              <p id="modalPrice"></p>
+              <span>Quantity
+                <button class="btn btn-danger btn-small" id="decrease">-</button>
+                <span id="quantity">1</span>
+                <button class="btn btn-small btn-success" id="increase">+</button>
+              </span>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continue Shopping</button>
+            <button type="button" class="btn btn-primary add-cart">add to cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+ 
+
+  <!--cart page-->
+
+  <section>
+       <div class="containercart">
+        <div class="d-flex justify-content-between">
+        <h1>🛒 Shopping Cart</h1>
+        <button type="button" class="btn btn-lg btn-danger h-75" onclick="closecart()">close</button>
+        </div>
+        <div class="cart-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>productname</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                       
+                    </tr>
+                </thead>
+                <tbody id="cartBody">
+                   <!-- <tr>
+                        <td>
+                            <div class="product-cell">
+                                <img src="" alt="" class="product-image">
+                                <span class="product-name" id="cart-name"></span>
+                            </div>
+                        </td>
+                        <td><span class="price"></span></td>
+                        <td>
+                            <div class="quantity">
+                              quantity
+                            </div>
+                        </td>
+                        <td><span class="total-price">total here</span></td>
+                    </tr>-->
+                  </tbody>
+            </table>
+        </div>
+
+        <div class="cart-summary">
+            <div class="summary-content">
+                <div class="summary-row">
+                    <span>Subtotal:</span>
+                    <span id="subtotal"></span>
+                </div>
+                <div class="summary-row">
+                    <span>:</span>
+                    <span id="tax"></span>
+                </div>
+                <div class="summary-row summary-total">
+                    <span>Total:</span>
+                    <span id="grandTotal"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
   <!--Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
   <script>
     function showSection(sectionClass) {
-  // Hide all sections first
-  document.querySelectorAll('.cardsection, .cardsection2, .cardsection3, .cardsection4, .cardsection5, .cardsection6')
-    .forEach(sec => sec.style.display = 'none');
+      // Hide all sections first
+      document.querySelectorAll('.cardsection, .cardsection2, .cardsection3, .cardsection4, .cardsection5, .cardsection6')
+        .forEach(sec => sec.style.display = 'none');
 
-  // Show only the selected section
-  document.querySelector(sectionClass).style.display = 'block';
-}
+      // Show only the selected section
+      document.querySelector(sectionClass).style.display = 'block';
+    }
 
-document.getElementById('rice').addEventListener('click', () => showSection('.cardsection'));
-document.getElementById('dairy').addEventListener('click', () => showSection('.cardsection2'));
-document.getElementById('masala').addEventListener('click', () => showSection('.cardsection3'));
-document.getElementById('cleaning').addEventListener('click', () => showSection('.cardsection4'));
-document.getElementById('healthcare').addEventListener('click', () => showSection('.cardsection5'));
-document.getElementById('instant').addEventListener('click', () => showSection('.cardsection6')); 
+    document.getElementById('rice').addEventListener('click', () => showSection('.cardsection'));
+    document.getElementById('dairy').addEventListener('click', () => showSection('.cardsection2'));
+    document.getElementById('masala').addEventListener('click', () => showSection('.cardsection3'));
+    document.getElementById('cleaning').addEventListener('click', () => showSection('.cardsection4'));
+    document.getElementById('healthcare').addEventListener('click', () => showSection('.cardsection5'));
+    document.getElementById('instant').addEventListener('click', () => showSection('.cardsection6'));
+    
+
+
+
+    //function for add to cart 
+
+    document.querySelectorAll('.add-to-cart-btn').forEach(button => {
+      button.addEventListener('click', function () {
+
+        const productimage = this.getAttribute('data-image');
+        const productprice = this.getAttribute('data-price');
+        const productname = this.getAttribute('data-product');
+
+        document.getElementById('modalImage').src = productimage;
+        document.getElementById('modalProductName').textContent = productname;
+        document.getElementById('modalPrice').textContent = 'Rs.' + productprice;
+
+      })
+    })
+
+    //function to add and decrease cart button;
+
+    let quantity = document.getElementById('quantity');
+    let increase = document.getElementById('increase');
+    let decrease = document.getElementById('decrease');
+
+    let Quantity = 1;
+
+    increase.addEventListener('click', () => {
+      Quantity++;
+      quantity.textContent = Quantity
+    })
+
+
+    decrease.addEventListener('click', () => {
+      if (quantity.textContent > 1) {
+        Quantity--;
+        quantity.textContent = Quantity
+      }
+    })
+
+    document.getElementById('cartModal').addEventListener('hidden.bs.modal', function () {
+      Quantity=1;
+      quantity.textContent = 1;
+    });
+
+
+//function to show the cart page
+  function showcart(cartpage){
+     document.querySelectorAll('.cardsection, .cardsection2, .cardsection3, .cardsection4, .cardsection5, .cardsection6,.sidenav,.containercart')
+        .forEach(sec => sec.style.display = 'none');
+
+      document.querySelector(cartpage).style.display='block';
+  }
+
+  document.getElementById('cart').addEventListener('click',()=>{showcart('.containercart')})
+
+ //function to close the cart page
+  let containercart=document.querySelector('.containercart');
+  let cardsection=document.querySelector('.cardsection');
+  let sidenav=document.querySelector('.sidenav');
+ function closecart(){
+     containercart.style.display='none';
+     cardsection.style.display='block';
+      sidenav.style.display='block';
+ }
+
+
+ // function to add details to cart
+  let productimage=document.getElementById('modalImage');
+  let productname=document.getElementById('modalProductName');
+  let productprice=document.getElementById('modalPrice'); 
+  let cartprice=document.getElementById('cart-price');
+  let cartimage=document.getElementById('cart-image');
+  let cartname=document.getElementById('cart-name');
+   let cartqty=document.getElementById('cart-qty');
+   let cartbody=document.getElementById('cartBody');
+   document.querySelector('.add-cart').addEventListener('click',()=>{
+
+       
+    
+      let newrow=document.createElement('tr');
+      let totalprice=productprice.textContent*quantity.textContent;
+      newrow.innerHTML=`<td>
+                           <img src="${productimage.src}" alt="" class="product-image product-cell">
+                        </td>
+                        <td><span class='product-cell'>${productname.textContent}</span></td>
+                        <td><span class="price">${productprice.textContent}</span></td>
+                        <td>
+                            <div class="quantity">
+                              ${quantity.textContent}
+                            </div>
+                        </td>
+                        <td><span class="total-price">${totalprice}</span></td>
+                        <td><button class='btn btn-lg btn-danger deletecart'>delete</button></td>`
+                        
+                        cartBody.appendChild(newrow);
+
+                        let modal=bootstrap.Modal.getInstance(document.getElementById('cartModal'));
+                        modal.hide();
+
+                        showcart('.containercart');
+
+                         //fucnction to delete the cart 
+                        let deletecart=newrow.querySelector('.deletecart');
+                          deletecart.addEventListener('click',()=>{
+                          newrow.remove();
+                          })  
+                 
+                
+                       
+                      })
+
+     
+      
   </script>
-
 </body>
+
 </html>
